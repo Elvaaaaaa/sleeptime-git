@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> SleepTime App </title>
+        <style>
+            body {
+                text-align: center; 
+                color: aliceblue; 
+                background-color: brown;
+            }
+
+            .output {
+                border: 3px solid white;
+                margin-top: 20px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <p>If you go to bed NOW, you should wake up at...</p>
+        <button onclick="handleOnClickEvent()">zzz</button>
+        <div class="output">
+            <p> It takes the average human fourteen minutes to fall asleep.</p>
+            <p> you head to bed right now, you should try to wake up at one of the following times:</p>
+            <p id="hours"> 4:38 PM  or 6:08 PM  or 7:38 PM  or 9:08 PM  or 10:38 PM  or 12:08 AM </p>
+            <p> A good night's sleep consists of 5-6 complete sleep cycles. </p>
+        </div>
+        <script>
+            function handleOnClickEvent() {
+                console.log("It's working");
+                let output = document.querySelector(".output");
+                output.style.display = "block";
+
+                let hours = document.getElementById("hours");
+                hours.innerText = "Placeholder for hours";
+            }
+        </script>
+    </body>
+</html>
