@@ -1,9 +1,9 @@
-let now = Date.now();
+let root = document.getElementById("root");
 
-let minute = 60 * 1000;
-now += minute * 14;
-for (let c = 1; c < 10; c++) {
-    now += 90 * minute;
-    let cycle = new Date(now);
-    console.log(cycle.toLocaleTimeString());
-} 
+let p = document.createElement("p");
+p.innerText = "If you go to bed NOW, you should wake up at...";
+root.append(p);
+
+let zzz = document.createElement("button");
+zzz.innerText = "zzz";
+root.append(zzz);
